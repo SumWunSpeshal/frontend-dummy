@@ -1,0 +1,37 @@
+{
+  "name": "webapp",
+  "version": "1.0.0",
+  "description": "my fancy web app description",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SumWunSpeshal/webApp.git"
+  },
+  "keywords": [
+    "kommt",
+    "vllt",
+    "auch",
+    "später"
+  ],
+  "author": "Sacha Rodier",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.24.7",
+    "bs-html-injector": "^3.0.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-cache": "0.2.8",
+    "gulp-concat": "^2.6.1",
+    "gulp-jshint": "^2.1.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-rename": "1.2.2",
+    "gulp-sass": "^4.0.1",
+    "gulp-sass-lint": "^1.4.0",
+    "gulp-uglify": "^3.0.1",
+    "jquery": "^3.3.1",
+    "jshint": "^2.9.6"
+  }
+}
