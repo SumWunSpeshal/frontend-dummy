@@ -54,7 +54,7 @@ gulp.task('lint', function () {
 gulp.task('styles', function () {
 	gulp.src('src/scss/**/*.scss')
 		.pipe(sass({
-			outputStyle: 'expanded'
+			outputStyle: 'compressed'
 		}).on('error', sass.logError))
 		.pipe(autoprefixer({
 			browsers: ['last 2 versions'],
