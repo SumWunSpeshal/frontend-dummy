@@ -4,7 +4,7 @@
 
 html {
 	font-size: calc(1vw + 1em);
-
+	
 	@media(max-width: 1400px) {
 		font-size: 30px;
 	}
@@ -15,18 +15,16 @@ body {
 	padding: 0;
 	color: $c-main;
 	font-family: $font-main;
-	font-size: 16px;
-	//sass-lint:disable no-vendor-prefixes
+	font-size: 16px; //sass-lint:disable no-vendor-prefixes
 	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	//sass-lint:enable no-vendor-prefixes
+	-moz-osx-font-smoothing: grayscale; //sass-lint:enable no-vendor-prefixes
 }
 
 ul {
 	padding: 0;
 	margin: 0;
 	list-style: none;
-
+	
 	li {
 		display: inline-block;
 	}
@@ -37,7 +35,7 @@ ul {
 	padding: 10px;
 	border: 4px solid $c-main;
 	background: $c-main;
-
+	
 	&.active {
 		border-color: $c-secondary;
 	}
