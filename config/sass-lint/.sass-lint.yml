@@ -58,7 +58,7 @@ rules:
     - 1
     - convention: hyphenatedlowercase
   indentation:
-    - 1
+    - 0
     - size: tab
   leading-zero:
     - 1
