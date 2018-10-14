@@ -1,20 +1,17 @@
 {
-  "name": "webApp",
+  "name": "frontend-dummy",
   "version": "1.0.0",
-  "description": "my fancy web app description",
+  "description": "dummy",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/SumWunSpeshal/webApp.git"
+    "url": "https://github.com/SumWunSpeshal/frontend-dummy.git"
   },
   "keywords": [
-    "kommt",
-    "vllt",
-    "auch",
-    "später"
+    "stuff"
   ],
   "author": "Sacha Rodier",
   "license": "MIT",
