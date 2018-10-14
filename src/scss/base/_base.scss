@@ -35,8 +35,10 @@ ul {
 	padding: 10px;
 	border: 4px solid $c-main;
 	background: $c-main;
+	outline: none;
 	
 	&.active {
-		border-color: $c-secondary;
+		border: 4px solid $c-secondary;
+		background: $c-secondary;
 	}
 }
