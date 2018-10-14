@@ -12,6 +12,10 @@
 	$('[' + dataHello + ']').on('click', function () {
 		var $self = $(this);
 
-		$self.toggleClass(isActive);
+		if ($self.hasClass(isActive)) {
+			$self.removeClass(isActive);
+		} else {
+			$self.addClass(isActive);
+		}
 	});
 })(window, jQuery);
