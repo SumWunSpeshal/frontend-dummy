@@ -6,4 +6,5 @@
 
 (function (window, $) {
 
-})(window, jQuery);
+  
+})(window, jQuery); 

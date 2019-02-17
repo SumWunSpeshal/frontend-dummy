@@ -4,6 +4,8 @@
 var gulp = require('gulp'),
 	rename = require('gulp-rename'),
 	sassLint = require('gulp-sass-lint');
+var ts = require("gulp-typescript");
+var tsProject = ts.createProject("tsconfig.json");
 var plumber = require('gulp-plumber');
 var browserSync = require('browser-sync');
 var htmlInjector = require("bs-html-injector");
@@ -66,20 +68,23 @@ gulp.task('styles', function () {
 
 // Scripts Task
 gulp.task('scripts', function () {
-	gulp.src('src/scripts/*.js')
+	gulp.src('src/scripts/*.ts')
 		.pipe(plumber({
 			errorHandler: function (error) {
 				console.log(error.message);
 				this.emit('end');
 			}
 		}))
-		.pipe(jshint())
-		.pipe(jshint.reporter('default'))
-		.pipe(concat('main.js'))
-		.pipe(rename({ suffix: '.min' }))
-		.pipe(uglify())
-		.pipe(gulp.dest('dist/scripts/'))
+		// .pipe(jshint())
+		// .pipe(jshint.reporter('default'))
+		// .pipe(concat('main.js'))
+		// .pipe(rename({ suffix: '.min' }))
+		// .pipe(uglify())
+		// .pipe(gulp.dest('dist/scripts/'))
 		.pipe(browserSync.reload({ stream: true }))
+		return tsProject.src()
+        .pipe(tsProject())
+        .js.pipe(gulp.dest("dist/scripts/"));
 });
 
 // Default task
@@ -90,6 +95,6 @@ gulp.task('default', ['browser-sync'], function () {
 function defaultFunction() {
 	gulp.watch('src/scss/**/*.s+(a|c)ss', ['lint']);
 	gulp.watch('src/scss/**/*.scss', ['styles']);
-	gulp.watch('src/scripts/**/*.js', ['scripts']);
+	gulp.watch('src/scripts/**/*.ts', ['scripts']);
 	gulp.watch('*.html', ['styles']);
 }

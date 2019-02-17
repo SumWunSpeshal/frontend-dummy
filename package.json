@@ -16,7 +16,7 @@
   "author": "Sacha Rodier",
   "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.24.7",
+    "browser-sync": "^2.26.3",
     "bs-html-injector": "^3.0.3",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^6.0.0",
@@ -25,10 +25,12 @@
     "gulp-jshint": "^2.1.0",
     "gulp-plumber": "^1.2.0",
     "gulp-rename": "1.2.2",
-    "gulp-sass": "^4.0.1",
+    "gulp-sass": "^4.0.2",
     "gulp-sass-lint": "^1.4.0",
+    "gulp-typescript": "^5.0.0-alpha.3",
     "gulp-uglify": "^3.0.1",
     "jquery": "^3.3.1",
-    "jshint": "^2.9.6"
+    "jshint": "^2.9.6",
+    "typescript": "^3.1.6"
   }
 }
