@@ -1,20 +1,13 @@
 class Student {
-  public fullName: String 
+  private x:number;
+  private y:number;
 
-  constructor(
-    public firstName: string, 
-    public middleInitial: string, 
-    public lastName: string) {
-      this.fullName = firstName + " " + middleInitial + " " + lastName;
-  } 
-
-  private greeter(something: Person) {
-    return (`Hello ${something.firstName} ${something.middleInitial} ${something.lastName}`);
+  constructor(x?, y?) {
+    this.x = x;
+    this.y = y;
   }
-}
 
-interface Person {
-  firstName: string;
-  middleInitial: string;
-  lastName: string;
-}
+  private draw() {
+    document.body.innerHTML = (`X is ${this.x}, Y is${this.y}`)
+  }
+} 
