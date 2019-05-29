@@ -27,7 +27,7 @@ rules:
     - 1
     - allow-single-line: true
   class-name-format:
-    - 1
+    - 0
   clean-import-paths:
     - 1
     - filename-extension: false
